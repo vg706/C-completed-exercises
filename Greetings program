@@ -1,0 +1,20 @@
+PT/BR
+#include <stdio.h>
+#include <locale.h>
+void main(){
+    char nome [10];
+    setlocale(LC_ALL, "portuguese");
+    printf("Qual é o seu nome? ");
+    scanf("%s", &nome);
+    printf("Muito prazer em te conhecer %s", nome);
+}
+
+EN:
+#include <stdio.h>
+#include <locale.h>
+void main(){
+    char name [10];
+    printf("What's your name?\n");
+    scanf("%s", &nome);
+    printf("Muito prazer em te conhecer %s", nome);
+}
