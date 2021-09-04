@@ -1,0 +1,31 @@
+PT/BR:
+#import <stdio.h>
+#import <locale.h>
+void main(){
+    setlocale(LC_ALL,"Portuguese");
+    char n[20];
+    int i;
+    float p;
+    printf("Qual o seu nome?\n");
+    gets(n);
+    printf("Quantos anos você tem?\n");
+    scanf("%d", &i);
+    printf("Qual o seu peso?\n");
+    scanf("%f", &p);
+    printf("Prazer \"%s\", você tem %d anos e %.2fKg", n, i, p);
+}
+----------------------------------------------------------------
+EN:
+#import <stdio.h>
+void main(){
+    char n[20];
+    int age;
+    float lb;
+    printf("What's your name?\n");
+    gets(n);
+    printf("How old are you?\n");
+    scanf("%d", &age);
+    printf("How much do you weight (lb)?\n");
+    scanf("%f", &lb);
+    printf("Pleasure meeting you, \"%s\", I heard you are %d years old and %.2flb", n, age, lb);
+}
