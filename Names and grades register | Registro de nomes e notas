@@ -1,0 +1,83 @@
+PT/BR:
+//Este programa registra três nomes, sexos respectivos e notas, exibindo-os no final de forma organizada
+#include <stdio.h>
+void main(){
+    char nome[20], nome_2[20], nome_3[20];
+    char sexo, sexo_2, sexo_3;
+    float nota, nota_2, nota_3;
+    printf("Cadastrando a primeira pessoa\n");
+    printf("-----------------------------\n");
+    printf("NOME:");
+    gets(nome);
+    printf("SEXO [M/F]:");
+    sexo = getchar();
+    printf("NOTA:");
+    scanf("%f", &nota);
+    printf("Cadastrando a segunda pessoa\n");
+    printf("----------------------------\n");
+    printf("NOME:");
+    fflush(stdin);
+    gets(nome_2);
+    printf("SEXO [M/F]:");
+    sexo_2 = getchar();
+    printf("NOTA:");
+    scanf("%f", &nota_2);
+    printf("Cadastrando a terceira pessoa\n");
+    printf("-------------------------------\n");
+    printf("NOME:");
+    fflush(stdin);
+    gets(nome_3);
+    printf("SEXO [M/F]:");
+    sexo_3 = getchar();
+    printf("NOTA:");
+    scanf("%f", &nota_3);
+    printf("Listagem completa\n");
+    printf("-----------------\n");
+    printf("NOME\t\t\tSEXO\tNOTA\n");
+    printf("%-25s %c %7.1f\n", nome, sexo, nota);
+    printf("%-25s %c %7.1f\n", nome_2, sexo_2, nota_2);
+    printf("%-25s %c %7.1f", nome_3, sexo_3, nota_3);
+}
+
+------------------------------------------------------
+
+EN:
+//This program registers three names, respective genders and grades, displaying them organized in the execution
+#include <stdio.h>
+void main(){
+    char name[20], name_2[20], name_3[20];
+    char gender, gender_2, gender_3;
+    float grade, grade_2, grade_3;
+    printf("Submitting the first person\n");
+    printf("-----------------------------\n");
+    printf("NAME:");
+    gets(name);
+    printf("GENDER [M/F]:");
+    gender = getchar();
+    printf("GRADE:");
+    scanf("%f", &grade);
+    printf("Submitting the second person\n");
+    printf("----------------------------\n");
+    printf("NAME:");
+    fflush(stdin);
+    gets(name_2);
+    printf("GENDER [M/F]:");
+    gender_2 = getchar();
+    printf("GRADE:");
+    scanf("%f", &grade_2);
+    printf("Submitting the third person\n");
+    printf("-------------------------------\n");
+    printf("NAME:");
+    fflush(stdin);
+    gets(name_3);
+    printf("GENDER [M/F]:");
+    gender_3 = getchar();
+    printf("GRADE:");
+    scanf("%f", &grade_3);
+    printf("Full list\n");
+    printf("-----------------\n");
+    printf("NAME\t\t\tGENDER\tGRADE\n");
+    printf("%-25s %c %8.1f\n", name, gender, grade);
+    printf("%-25s %c %8.1f\n", name_2, gender_2, grade_2);
+    printf("%-25s %c %8.1f", name_3, gender_3, grade_3);
+}
