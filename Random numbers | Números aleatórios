@@ -1,0 +1,21 @@
+PT/BR
+//Esse programa gera números "aleatórios" definidos pela máquina. Usando a função: rand() % 20; eu defino que o número exibido na execução seja entre 0 e 19, mas pode-se escolher os limites inserindo outro valor da sua escolha. Exemplos: rand() % 10, rand() % 100, rand() % 5.
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+void main(){
+    srand(time(NULL));
+    int n = rand() % 20;
+    printf("O numero gerado foi: %i", n);
+}
+-----------------------------------------
+EN:
+//This program generates "random" numbers defined by the machine. Using the function: rand() % 20; I define that the number displayed in the execution is between 0 and 19, but you can choose the limits inserting another value of choice. Examples: rand() % 10, rand() % 100, rand() % 5.
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+void main(){
+    srand(time(NULL));
+    int n = rand() % 20;
+    printf("The generated number is: %i", n);
+}
