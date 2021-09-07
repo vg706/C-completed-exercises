@@ -1,0 +1,31 @@
+PT/BR:
+//Programa que compara o número digitado pelo usuário com o gerado pela máquina.
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <time.h>
+void main(){
+    srand(time(NULL));
+    setlocale(LC_ALL, "Portuguese");
+    int n = rand() % 11;
+    int resp;
+    printf("Vou pensar em um número entre 0 e 10. Adivinha!\n");
+    printf("Qual número? ");
+    scanf("%d", &resp);
+    printf("O seu número é %d, o que eu pensei foi %i", resp, n);
+}
+-----------------------------------------------------------------
+EN:
+//Program that compares the number inserted by the user to the random number from the machine.
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+void main(){
+    srand(time(NULL));
+    int n = rand() % 11;
+    int ans;
+    printf("I'm going to think in a number between 0 and 10. Guess!\n");
+    printf("Which number? ");
+    scanf("%d", &ans);
+    printf("Your number is %d, the one I tought is %i", ans, n);
+}
