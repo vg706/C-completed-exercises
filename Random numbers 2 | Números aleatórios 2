@@ -7,7 +7,7 @@ PT/BR:
 void main(){
     srand(time(NULL));
     setlocale(LC_ALL, "Portuguese");
-    int n = rand() % 11;
+    int n = rand() % 10 + 1;
     int resp;
     printf("Vou pensar em um número entre 0 e 10. Adivinha!\n");
     printf("Qual número? ");
@@ -22,7 +22,7 @@ EN:
 #include <time.h>
 void main(){
     srand(time(NULL));
-    int n = rand() % 11;
+    int n = rand() % 10 + 1;
     int ans;
     printf("I'm going to think in a number between 0 and 10. Guess!\n");
     printf("Which number? ");
