@@ -1,20 +1,25 @@
 PT/BR:
 #include <stdio.h>
 #include <locale.h>
-main(){
+void main(){
     setlocale(LC_ALL, "Portuguese");
-    printf("=-=-=-=-=-=-=-=-=-=-=-= \n\\a \t= \tbeep");
-    printf(" \n\\t \t= \ttabulação");
-    printf(" \n\\n \t= \tpular linha");
-    printf(" \n\\ \t= \tcontra barra");
-    printf(" \n%% \t= \tporcentagem");
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n  \\a \t=\t beep\n");
+    printf("  \\t \t=\t tabulação\n");
+    printf("  \\n \t=\t pular linha\n");
+    printf("  %%%% \t=\t porcentagem\n");
+    printf("  \\\\ \t=\t contrabarra\n");
+    printf("  \\? \t=\t interrogação\n");
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
 }
 --------------------------------------
+EN:
 #include <stdio.h>
-main(){
-    printf("=-=-=-=-=-=-=-=-=-=-=-= \n\\a \t= \tbeep");
-    printf(" \n\\t \t= \ttab");
-    printf(" \n\\n \t= \tline jump");
-    printf(" \n\\ \t= \tcounter-bar");
-    printf(" \n%% \t= \tpercentage");
+void main(){
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n  \\a \t=\t beep\n");
+    printf("  \\t \t=\t tabulation\n");
+    printf("  \\n \t=\t line jump\n");
+    printf("  %%%% \t=\t percentage\n");
+    printf("  \\\\ \t=\t counterbar\n");
+    printf("  \\? \t=\t interrogation\n");
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
 }
